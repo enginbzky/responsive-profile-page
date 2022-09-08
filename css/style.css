@@ -1,0 +1,278 @@
+/****Universal selector****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***All font family was determined as a "Ubuntu"***/
+/***Generally the flexbox was used for positining***/
+body {
+  width: 100vw;
+  background-color: #e8ebf2;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/***Header part was sticked with "position".***/
+/***The header part is put in front of all elements with "z-index".***/
+#header-container {
+  width: 100vw;
+  height: 75px;
+  box-shadow: 0px -1px 10px 1px #9b9797;
+  background-color: #e8ebf2;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#personnel {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 70px;
+  column-gap: 20px;
+}
+
+#foto {
+  width: 70px;
+  border-radius: 50%;
+}
+
+strong {
+  color: rgb(117, 117, 192);
+}
+
+#name {
+  font-size: 30px;
+}
+
+#media {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 50px;
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+#body-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  margin: 100px 0 0 0;
+}
+
+.box1 {
+  width: 700px;
+  height: 500px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#web-foto {
+  width: 700px;
+  height: 240px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#aside-container {
+  width: 350px;
+  height: 500px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  position: sticky;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: justify;
+}
+
+#foto2 {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0px -1px 10px 1px #9b9797;
+  position: relative;
+  left: 30px;
+  bottom: 90px;
+}
+
+/***Here, "position" selector was used for positining***/
+#body-text {
+  position: relative;
+  left: 35px;
+  bottom: 70px;
+  font-size: 18px;
+}
+
+.aside {
+  height: 40px;
+  width: 150px;
+  box-shadow: 0px -1px 10px 1px #9b9797;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 40px;
+  padding: 5px 10px 5px 5px;
+}
+
+.aside > a {
+  text-decoration: none;
+}
+
+.aside:hover {
+  width: 150px;
+  background-color: rgb(117, 117, 192);
+  border-radius: 10px;
+}
+
+.box2 {
+  width: 700px;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(117, 117, 192);
+}
+
+#body-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.list {
+  width: 700px;
+  font-size: 20px;
+  display: flex;
+  column-gap: 150px;
+}
+
+.flag {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.work,
+.uni {
+  display: flex;
+  column-gap: 10px;
+}
+
+.education,
+.experiences,
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  row-gap: 30px;
+}
+
+.workgroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.gotoup {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  opacity: 0.5;
+}
+
+.fa-solid {
+  color: #9b9797;
+}
+
+small {
+  color: rgb(117, 117, 192);
+}
+
+/***Here, "media" selector was used for responsive designing***/
+@media screen and (max-width: 550px) {
+  #main-container {
+    width: 550px;
+    background-color: #e8ebf2;
+  }
+
+  #body-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 50px;
+  }
+
+  #header-text {
+    font-size: 15px;
+  }
+
+  #media {
+    font-size: 40px;
+  }
+
+  #aside-container {
+    display: none;
+  }
+
+  hr {
+    width: 450px;
+  }
+
+  .box1 {
+    width: 450px;
+    height: 500px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+
+  #media {
+    margin-right: 20px;
+  }
+
+  #personnel {
+    width: 500px;
+  }
+
+  #web-foto {
+    width: 450px;
+    height: 240px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .list {
+    width: 450px;
+    font-size: 20px;
+    display: flex;
+    column-gap: 150px;
+  }
+
+  .box2 {
+    width: 450px;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  #body-header {
+    width: 450px;
+  }
+
+  .languages {
+    display: flex;
+    column-gap: 80px;
+  }
+}
